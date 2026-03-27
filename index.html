@@ -6,70 +6,85 @@
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-    <a href="#about">About</a>
-    <a href="#hobbies">Hobbies</a>
-</nav>
-
-<!-- HEADER -->
 <header>
     <h1>Noel Perante</h1>
-    <p>Just a simple space about me</p>
 </header>
 
 <!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <img src="file_00000000ab307208bfb2c462581de7c5.png" alt="My Photo">
+<section class="about">
+    <img src="me.jpg" alt="My Photo">
     
     <p>
-        Hello! I am a Grade 11 ICT student. I like exploring technology and learning how to create simple web pages. I'm still improving my skills, but I'm really interested in building and designing websites.
+        Hello! I am a Grade 11 ICT student. I like exploring technology and learning how to create simple web pages. I'm still improving, but I really enjoy designing and building websites.
+    </p>
+
+    <p>
+        As a student, I try to learn new things step by step. I also like experimenting with designs and making my projects better.
     </p>
 </section>
 
 <!-- HOBBIES -->
-<section id="hobbies">
-    <h2>What I Usually Do</h2>
+<section class="hobbies">
+    <h2>My Hobbies</h2>
 
-    <div class="box">
-        <img src="70922912e00da325e5f7963d2330549b.jpg" alt="Gaming">
+    <div class="card">
+        <img src="game.jpg">
         <h3>Gaming</h3>
-        <p>
-            In my free time, I play online games to unwind and take a break from schoolwork.
-        </p>
+        <p>I play online games to relax and take a break from schoolwork.</p>
     </div>
 
-    <div class="box">
-        <img src="204f9e9e5831ac9d80084f63cbc36fc6.jpg" alt="Watching tutorials">
+    <div class="card">
+        <img src="tutorial.jpg">
         <h3>Watching Tutorials</h3>
-        <p>
-            I usually watch tutorials when I want to learn something new or understand a topic better.
-        </p>
+        <p>I watch tutorials to learn new things and understand lessons better.</p>
     </div>
 
-    <div class="box">
-        <img src="IMG_20260325_232608.jpg" alt="Exploring Technology">
+    <div class="card">
+        <img src="tech.jpg">
         <h3>Exploring Technology</h3>
-        <p>
-            I like checking out new apps, gadgets, and updates because I find it interesting how technology keeps improving.
-        </p>
+        <p>I like checking new apps and gadgets because technology is always improving.</p>
     </div>
-
-    <button onclick="msg()">Press here</button>
 </section>
 
-<!-- FOOTER -->
+<!-- WHAT I'M LEARNING -->
+<section class="skills">
+    <h2>What I’m Learning</h2>
+
+    <div class="card">
+        <img src="design.jpg">
+        <h3>Basic Web Design</h3>
+        <p>I am learning how to design simple and clean web pages.</p>
+    </div>
+
+    <div class="card">
+        <img src="coding.jpg">
+        <h3>Coding Practice</h3>
+        <p>I practice coding to improve my skills step by step.</p>
+    </div>
+
+    <div class="card">
+        <img src="ideas.jpg">
+        <h3>Exploring New Ideas</h3>
+        <p>I like trying new styles and ideas when making my projects.</p>
+    </div>
+</section>
+
+<!-- GOAL -->
+<section>
+    <h2>My Goal</h2>
+    <p>
+        My goal is to improve my skills in web development and create better and more interactive websites in the future.
+    </p>
+</section>
+
+<!-- BUTTON -->
+<button onclick="msg()">Press here</button>
+
 <footer>
     <p>Grade 11 - Numbers | 2026</p>
 </footer>
 
-<!-- SCRIPT -->
-<script>
-function msg(){
-    alert("Thanks for checking my website!");
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

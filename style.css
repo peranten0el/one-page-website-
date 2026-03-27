@@ -1,102 +1,56 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Verdana;
+    font-family: Arial;
     margin: 0;
-    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    background: #f4f4f4;
     text-align: center;
 }
 
-/* NAV */
-nav {
-    background: #222;
-    padding: 12px;
-    position: sticky;
-    top: 0;
-}
-
-nav a {
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #00adb5;
-}
-
-/* HEADER */
 header {
-    padding: 30px;
-    background: #00adb5;
+    background: #1e1e2f;
     color: white;
+    padding: 20px;
 }
 
-/* SECTIONS */
-section {
-    padding: 30px;
-    animation: fade 1s ease;
-}
-
-/* IMAGE (ABOUT) */
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.about img {
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-}
-
-/* BOX STYLE */
-.box {
-    display: inline-block;
-    margin: 15px;
-    padding: 15px;
-    background: white;
-    border-radius: 20px;
-    width: 200px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-/* IMAGE SA LOOB NG BOX */
-.box img {
-    width: 100%;
-    height: 150px;
     border-radius: 10px;
+    margin: 15px 0;
+    border: 3px solid #1e1e2f;
+}
+
+.hobbies, .skills {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 15px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* HOVER */
-.box:hover {
-    transform: rotate(2deg) scale(1.05);
-    transition: 0.3s;
-}
-
-/* BUTTON */
 button {
+    margin: 20px;
     padding: 10px 20px;
-    margin-top: 15px;
-    border: none;
-    background: #00adb5;
+    background: #1e1e2f;
     color: white;
-    border-radius: 8px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background: #007b80;
-}
-
-/* FOOTER */
 footer {
-    background: #222;
+    background: #1e1e2f;
     color: white;
     padding: 10px;
-}
-
-/* FADE ANIMATION */
-@keyframes fade {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }

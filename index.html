@@ -1,89 +1,96 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Noel Perante</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 10px;
+    background: #eaeaea;
+    color: #333;
+}
 
-<body>
+header, section, footer {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
 
-<header>
-    <h1>Noel G. Perante</h1>
-</header>
+header {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
 
-<section class="about">
-    <img src="file_00000000ab307208bfb2c462581de7c5.png">
+header p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
 
-    <p>
-        Hello! I am a Grade 11 ICT student with a growing interest in technology and web development. I enjoy learning how websites are created and how design and structure work together.
-    </p>
+.about {
+    text-align: center;
+}
 
-    <p>
-        I am still improving my skills, but I stay motivated to learn new things. I believe that practice and effort will help me become better over time.
-    </p>
+.about img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 3px solid #1e1e2f;
+}
 
-    <p>
-        I also believe that learning takes time and patience. That is why I continue practicing and improving my work whenever I have the chance.
-    </p>
-</section>
+.about p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
 
-<section>
-    <h2>My Hobbies</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="70922912e00da325e5f7963d2330549b.jpg">
-            <h3>Gaming</h3>
-            <p>I play online games during my free time to relax and reduce stress. It also helps improve my focus, reaction time, and decision-making skills while playing.</p>
-        </div>
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
 
-        <div class="card">
-            <img src="f3ae218174e33de0da3dc6ecaa8f6c48.jpg">
-            <h3>Watching Tutorials</h3>
-            <p>I watch tutorials to learn new skills and understand lessons better.</p>
-        </div>
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column mobile */
+    gap: 15px;
+    padding: 15px 0;
+}
 
-        <div class="card">
-            <img src="IMG_20260325_232608.jpg">
-            <h3>Exploring Technology</h3>
-            <p>I enjoy exploring apps and gadgets to learn how they work.</p>
-        </div>
-    </div>
-</section>
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
 
-<section>
-    <h2>What I’m Learning</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="f7eeb98c91da110c4700f59b993eccbd.jpg">
-            <h3>Web Design</h3>
-            <p>I learn how to design clean and user-friendly websites.</p>
-        </div>
+.card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
 
-        <div class="card">
-            <img src="4fd4ee58f60dd08935da9c9e2738bc2f.jpg">
-            <h3>Coding</h3>
-            <p>I practice HTML, CSS, and basic JavaScript regularly.</p>
-        </div>
+footer {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
-        <div class="card">
-            <img src="IMG_20260325_232608.jpg">
-            <h3>Creativity</h3>
-            <p>I explore ideas to improve my creativity in projects.</p>
-        </div>
-    </div>
-</section>
+/* Tablet screens */
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-<section>
-    <h2>My Goal</h2>
-    <p>
-        My goal is to improve my skills and create useful and creative websites.
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 Noel Perante</p>
-</footer>
-
-</body>
-</html>
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

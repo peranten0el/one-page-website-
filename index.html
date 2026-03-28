@@ -1,96 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0 10px;
-    background: #eaeaea;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel Perante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header, section, footer {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-}
+<header>
+    <h1>Noel G. Perante</h1>
+    <p>Grade 11 ICT Student | Technology Explorer | Aspiring Web Developer</p>
+</header>
 
-header {
-    background: #1e1e2f;
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-}
+<section class="about">
+    <img src="file_00000000ab307208bfb2c462581de7c5.png" alt="Noel Perante">
+    <p>Hello! I’m Noel. I’m currently a Grade 11 ICT student, and I have a growing interest in technology, especially web development. I love learning how websites are structured and designed, and I enjoy seeing how all the pieces work together to create a smooth user experience.</p>
+    <p>I spend a lot of time experimenting with different coding techniques. Sometimes I make small projects just to practice HTML, CSS, or JavaScript, and other times I explore design ideas to see what works best. Learning new skills motivates me and keeps me curious.</p>
+    <p>I believe that improvement comes with patience and consistent practice. Each project I work on teaches me something new, whether it’s problem-solving, creativity, or understanding how technology works. I enjoy taking small steps every day to become better at what I do.</p>
+</section>
 
-header p {
-    margin-top: 5px;
-    font-size: 0.9rem;
-}
+<section>
+    <h2>My Hobbies</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="70922912e00da325e5f7963d2330549b.jpg" alt="Gaming">
+            <h3>Gaming</h3>
+            <p>Gaming is one of my favorite ways to relax after studying. I like games that challenge my thinking and improve my focus. Through gaming, I’ve also learned patience, strategic planning, and decision-making, which I can apply to my projects and daily life.</p>
+        </div>
+        <div class="card">
+            <img src="f3ae218174e33de0da3dc6ecaa8f6c48.jpg" alt="Watching Tutorials">
+            <h3>Watching Tutorials</h3>
+            <p>Watching tutorials is a hobby that helps me learn new things faster. I explore coding tutorials, design tips, and tech hacks online. This helps me understand concepts clearly and apply them to my own projects, making learning more interactive and practical.</p>
+        </div>
+        <div class="card">
+            <img src="IMG_20260325_232608.jpg" alt="Exploring Technology">
+            <h3>Exploring Technology</h3>
+            <p>I enjoy exploring apps, software, and gadgets to see how they function. Discovering how things work inspires me to think creatively and consider how I can use technology in new ways. I love experimenting and learning from hands-on experiences.</p>
+        </div>
+    </div>
+</section>
 
-.about {
-    text-align: center;
-}
+<section>
+    <h2>What I’m Learning</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="f7eeb98c91da110c4700f59b993eccbd.jpg" alt="Web Design">
+            <h3>Web Design</h3>
+            <p>I’m learning how to design websites that are both attractive and user-friendly. I focus on colors, layouts, and navigation so that visitors can enjoy a smooth experience. Designing websites teaches me creativity and helps me express my ideas visually.</p>
+        </div>
+        <div class="card">
+            <img src="4fd4ee58f60dd08935da9c9e2738bc2f.jpg" alt="Coding">
+            <h3>Coding</h3>
+            <p>HTML, CSS, and JavaScript are the tools I use most. I practice coding every day to improve my skills and create interactive websites. Coding is not only technical but also creative, as it allows me to bring my ideas to life in real digital projects.</p>
+        </div>
+        <div class="card">
+            <img src="204f9e9e5831ac9d80084f63cbc36fc6.jpg" alt="Creativity">
+            <h3>Creativity</h3>
+            <p>Creativity is a skill I enjoy developing. I like experimenting with ideas, layouts, and colors to make my projects unique. Being creative helps me solve problems in innovative ways and makes my websites stand out from the ordinary.</p>
+        </div>
+    </div>
+</section>
 
-.about img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    border-radius: 10px;
-    margin: 15px 0;
-    border: 3px solid #1e1e2f;
-}
+<section>
+    <h2>My Goal</h2>
+    <p>My goal is to become a skilled web developer who can create websites that are both useful and enjoyable to use. I want to combine my technical knowledge with creativity to make projects that I am proud of. I aim to keep learning, experimenting, and improving every day.</p>
+    <p>Eventually, I hope to develop websites that help others, whether it’s for education, entertainment, or solving problems. My journey is just starting, but I am excited to continue growing and exploring the world of technology.</p>
+</section>
 
-.about p {
-    line-height: 1.5;
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-}
+<footer>
+    <p>© 2026 Noel Perante</p>
+</footer>
 
-h2 {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 1.2rem;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 column mobile */
-    gap: 15px;
-    padding: 15px 0;
-}
-
-.card {
-    background: white;
-    padding: 12px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-.card img {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-}
-
-footer {
-    background: #1e1e2f;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Tablet screens */
-@media (min-width: 600px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Desktop screens */
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+</body>
+</html>

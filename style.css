@@ -1,12 +1,13 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0 10px;
     background: #eaeaea;
+    color: #333;
 }
 
-section, header, footer {
-    width: 90%;
-    max-width: 1000px;
+header, section, footer {
+    width: 100%;
     margin: auto;
     padding: 10px;
 }
@@ -14,8 +15,13 @@ section, header, footer {
 header {
     background: #1e1e2f;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 15px 10px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 0.9rem;
 }
 
 .about {
@@ -23,42 +29,45 @@ header {
 }
 
 .about img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 15px 0;
     border: 3px solid #1e1e2f;
 }
 
 .about p {
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
 }
 
 h2 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
+    font-size: 1.2rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px 0;
+    gap: 15px;
+    padding: 15px 0;
 }
 
 .card {
     background: white;
-    padding: 15px;
+    padding: 12px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 .card img {
-    width: 80%;
-    max-width: 250px;
-    height: 150px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     display: block;
@@ -72,7 +81,7 @@ footer {
     padding: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
